@@ -1,7 +1,7 @@
 # Basic
-title: 张振鹏
-subtitle: 个人站
-description: 欢迎来到我的个人站~
+title: zzhpeng
+subtitle: 日常搬砖
+description: 搬砖路漫漫~
 # 头像里面的标题
 avatarTitle: zzhpeng
 # 头像里面的描述
@@ -11,8 +11,8 @@ url: "http://zzhpeng.com.cn"
 # Comment
 comment:
     gitment: 1
-    # uyan: 2143225  # 有言id,登录有言官网申请
-#    disqus: 0
+    # uyan: 0  # 有言id,登录有言官网申请
+    # disqus: 0
 
 # Social
 social:
@@ -22,7 +22,7 @@ social:
     # juejin: xxx
     jianshu: 2ada30d8d0f7
     # twitter: 
-    mail: 39894939@qq.com
+    mail: zhangzhenpeng008@gmail.com
 
 
 # 百度统计 
@@ -51,20 +51,20 @@ permalink: /:year/:month/:title/
 # Format
 highlighter: rouge
 
-textColor: #FF0000
+textColor: #ffffff
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: clear
+cover_color: green
 
 # The blog button should not be removed.
 blog_button:
-    title: 博客主页
+    title: blog
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: 所有文章, description: archive, url: '/archive'}   
-    - {title: 标签, description: tags, url: '/tags'}      
-    - {title: 关于我, description: about, url: '/about'}      
+    - {title: all, description: archive, url: '/archive'}
+    - {title: tags, description: tags, url: '/tags'}
+    - {title: about me, description: about, url: '/about'}
     
 
 # Pagination
