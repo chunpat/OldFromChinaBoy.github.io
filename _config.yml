@@ -6,13 +6,13 @@ description: 欢迎来到我的个人站~
 avatarTitle: zzhpeng
 # 头像里面的描述
 avatarDesc: php / web开发
-url: "http://zzhpeng.cn"
+url: "http://zzhpeng.com.cn"
 
 # Comment
 comment:
-    disqus: zzhpeng
-    # gitment: xxx // 需要修改 comments.html中的client_id和client_secret
+    gitment: 1
     # uyan: 2143225  # 有言id,登录有言官网申请
+#    disqus: 0
 
 # Social
 social:

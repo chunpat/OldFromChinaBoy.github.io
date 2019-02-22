@@ -1,44 +1,43 @@
 <section class="post-comments">
-
-  {% if site.comment.uyan %}
+  {% if site.comment.uyan == 1 %}
     <div id="uyan_frame"></div>
 
-    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid="+'{{ site.comment.uyan }}'></script>
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid={{ site.comment.uyan }}"></script>
 
-  {% elsif site.comment.disqus %}
+  {% elsif site.comment.disqus == 1 %}
     <div id="disqus_thread"></div>
     <script>
-    
-    var disqus_config = function () {
-        this.page.url = "{{ page.url | prepend: site.baseurl | prepend: site.url }}";
-        this.page.identifier = "{{ page.url }}";
-    };
-    var disqus_shortname = '{{ site.comment.disqus }}';
-    
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
+
+      var disqus_config = function () {
+          this.page.url = "{{ page.url | prepend: site.baseurl | prepend: site.url }}";
+          this.page.identifier = "{{ page.url }}";
+      };
+      var disqus_shortname = '{{ site.comment.disqus }}';
+
+      (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+          })();
     </script>
     <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
-    
 
-  {% elsif site.comment.gitment %}
-    <div id="gitmentContainer"></div>
+
+  {% elsif site.comment.gitment == 1 %}
+    <div id="comments"></div>
     <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
     <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
     <script>
     var gitment = new Gitment({
-        owner: 'zzhpeng',
-        repo: 'https://github.com/FromChinaBoy.github.io',
+        owner: 'FromChinaBoy',
+        repo: 'FromChinaBoy.github.io',
         oauth: {
             client_id: '08c72e65f33f40d129fc',
-            client_secret: '7034695f79404e5f8f4374e64e9b29a6a1fdefae',
+            client_secret: 'eb417581a386e18c1119ce5f2f0cccf15a98195e',
         },
     });
-    gitment.render('gitmentContainer');
+    gitment.render('comments');
     </script>
   {% endif %}
 
