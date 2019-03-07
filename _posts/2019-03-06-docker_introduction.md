@@ -20,7 +20,7 @@ Docker Community Edition (CE) is ideal for developers and small teams looking to
 * Test gives pre-releases that are ready for testing before general availability.
 * Nightly gives you latest builds of work in progress for the next major release.
 
-For more information about Docker CE, see Docker [Docker Engine | Docker](https://www.docker.com/community-edition/).
+For more information about Docker CE, see Docker [click me](https://www.docker.com/community-edition/).
     
 Releases： 每六个月发布一个大版本
 
